@@ -1,0 +1,46 @@
+if [[ -f $HOME/.nvm/nvm.sh ]]; then
+  source $HOME/.nvm/nvm.sh
+  # place this after nvm initialization!
+  autoload -U add-zsh-hook
+  load-nvmrc() {
+    if [[ -f .nvmrc && -r .nvmrc ]]; then
+      nvm use
+    elif [[ $(nvm version) != $(nvm version default)  ]]; then
+      echo "Reverting to nvm default version"
+      nvm use default
+    fi
+  }
+  add-zsh-hook chpwd load-nvmrc
+  load-nvmrc
+fi
+
+[ -f $HOME/.git-flow-completion/git-flow-completion.plugin.zsh ] && source $HOME/.git-flow-completion/git-flow-completion.plugin.zsh
+
+export GOPATH=$HOME/Develop/go-dev
+export PATH="$GOPATH/bin:$HOME/.rbenv/bin:/Users/thorsten/.rbenv/shims:/Users/thorsten/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# Start rbenv
+export RBENV_ROOT=$HOME/.rbenv
+eval "$(rbenv init -)"
+
+antigen bundle aws
+antigen bundle brew
+# antigen bundle bundler
+# antigen bundle capistrano
+antigen bundle command-not-found
+antigen bundle gem
+antigen bundle git-flow
+antigen bundle git-flow-avh
+antigen bundle gitignore
+antigen bundle jsontools
+antigen bundle osx
+antigen bundle postgres
+antigen bundle rails
+antigen bundle rake
+antigen bundle rake-fast
+antigen bundle rbenv
+antigen bundle ssh-agent
+antigen bundle zeus
+antigen bundle nvm
+antigen bundle vagrant
