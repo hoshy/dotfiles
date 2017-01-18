@@ -24,6 +24,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 export RBENV_ROOT=$HOME/.rbenv
 eval "$(rbenv init -)"
 
+# Setup SSH-Agent
+zstyle :omz:plugins:ssh-agent identities id_rsa github_rsa
+
 antigen bundle aws
 antigen bundle brew
 # antigen bundle bundler
