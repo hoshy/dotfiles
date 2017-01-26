@@ -35,3 +35,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set laststatus=2
+" gui colors if running iTerm
+if $TERM_PROGRAM =~ "iTerm"
+  set termguicolors
+endif
