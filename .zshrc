@@ -1,8 +1,7 @@
 [ -f $HOME/.antigen.zsh ] && source $HOME/.antigen.zsh
 
-export LANG=en_US.utf8
-export LC_ALL=$LANG
-export LANGUAGE=$LANG
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 AUTOENV_FILE_ENTER=.env
 AUTOENV_LOOK_UPWARDS=0
