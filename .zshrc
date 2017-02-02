@@ -8,7 +8,7 @@ AUTOENV_LOOK_UPWARDS=0
 DEFAULT_USER=thorsten
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status rbenv nvm time)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COLOR_SCHEME='light'
@@ -36,3 +36,6 @@ setopt no_share_history
 antigen apply
 
 [ -f $HOME/.zsh_aliases ] && source $HOME/.zsh_aliases
+
+export NVM_DIR="/Users/thorsten/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
