@@ -43,7 +43,7 @@ antigen bundle rails
 antigen bundle rake
 antigen bundle rake-fast
 antigen bundle rbenv
-antigen bundle ssh-agent
-antigen bundle zeus
+antigen bundle $HOME/.oh-my-zsh/custom/plugins/ssh-agent
+# antigen bundle zeus
 antigen bundle nvm
-antigen bundle vagrant
+# antigen bundle vagrant

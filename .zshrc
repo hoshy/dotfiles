@@ -29,6 +29,8 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 setopt append_history
 setopt no_share_history
 
+zstyle :omz:plugins:ssh-agent identities id_rsa id_ed25519
+
 # Check if we have additional local configs to load
 [ -f $HOME/.zsh_local ] && source $HOME/.zsh_local
 
