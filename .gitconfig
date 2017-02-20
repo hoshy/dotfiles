@@ -2,7 +2,7 @@
 	ui = true
 [user]
 	name = Thorsten Kohpeiß
-	email = tkohpeiss@carrentals.com
+	email = thorsten.kohpeiss@wlw.de
 [core]
 	autocrlf = input
 	ignorecase = false
