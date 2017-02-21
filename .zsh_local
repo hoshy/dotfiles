@@ -17,7 +17,7 @@ fi
 [ -f $HOME/.git-flow-completion/git-flow-completion.plugin.zsh ] && source $HOME/.git-flow-completion/git-flow-completion.plugin.zsh
 
 export GOPATH=$HOME/Develop/go-dev
-export PATH="$GOPATH/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$GOPATH/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:/usr/local/opt/sqlite/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Start rbenv
