@@ -21,6 +21,7 @@ antigen bundle Tarrasch/zsh-autoenv
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle $HOME/.oh-my-zsh/custom/plugins/thorsten
+antigen bundle supercrabtree/k
 
 # Load the theme.
 # antigen theme KuoE0/oh-my-zsh-solarized-powerline-theme solarized-powerline

@@ -17,3 +17,4 @@ alias tfp='terraform remote pull && terraform get && terraform plan -module-dept
 alias tfa='terraform remote pull && terraform get && terraform apply'
 alias cb='pbcopy'
 alias lsbigs='ls -1Rhs | sed -e "s/^ *//" | grep "^[0-9]" | sort -hr | head -n20'
+alias dc='docker-compose'

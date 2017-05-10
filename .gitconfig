@@ -14,7 +14,7 @@
 	smudge = git hawser smudge %f
 	required = true
 [http]
-	sslVerify = false
+	sslVerify = true
 [alias]
 	co = checkout
 	ci = commit
@@ -25,4 +25,4 @@
 	dump = cat-file -p
         squash = rebase -i origin/develop
 	rescue = !git fsck --full --no-reflogs --unreachable --lost-found | grep commit | cut -d\\  -f3 | xargs -n 1 git log -n 1 --pretty=oneline > .git/lost-found.txt
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
